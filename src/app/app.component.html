@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+<div>
+  <button (click)='setObj1()'>setObj</button>
+  <button (click)='pushArr()'>pushArr</button>
+  <button (click)='setStr()'>setStr</button>
+  <button (click)='setData()'>setData</button>
+  <button (click)='pushAndCopy()'>pushAndCopyIntoTheNewObj</button>
+</div>
+<h2> Here is current data of our app component</h2>
+<p class='code-block'>
+  <code [innerHtml]='text'></code>
+</p>
+<app-change-detector [data]='data'></app-change-detector>
